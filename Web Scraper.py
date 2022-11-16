@@ -1,15 +1,3 @@
-page = requests.get(url)
-
-
-startOfAlt = page.text.find('alt="Punk ', page.text.find("%d Punks Owned" % 2))
-
-print(page.text[startOfAlt+10 : startOfAlt+14]
-
-print(page.text[page.text.find('alt="Punk ', page.text.find("%d Punks Owned" % 2))+10 : page.text.find('alt="Punk ', page.text.find("%d Punks Owned" % 2))+14]
-
-
-
-
 
 for x in addressarray:
 	page = requests.get('https://cryptopunks.app/cryptopunks/accountinfo?account=' + addressarray[addresscounter])
